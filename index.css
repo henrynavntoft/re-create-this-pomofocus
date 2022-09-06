@@ -50,12 +50,13 @@ main ol {
   margin-top: 1em;
 }
 
-main a {
-  color: hsl(357, 12%, 42%);
-}
-
 span {
   color: #d85650;
+}
+
+span:hover {
+  color: hsl(357, 12%, 42%);
+  cursor: pointer;
 }
 
 main h2:after {
@@ -65,4 +66,36 @@ main h2:after {
   padding-top: 8px;
   border-bottom: 4px solid #f05b56;
   opacity: 0.6;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+  padding-top: 1em;
+}
+
+.footer-flex:last-child {
+  padding-bottom: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(357, 12%, 42%);
+}
+
+footer a:hover {
+  color: #f05b56;
+}
+
+footer p {
+  color: hsl(357, 12%, 42%);
+}
+
+footer img {
+  width: 40px;
+  cursor: pointer;
 }
